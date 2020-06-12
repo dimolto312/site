@@ -1,38 +1,101 @@
-<h1>Pure css drop down menu</h1>
-<nav role="navigation">
-  <ul id="main-menu">
-    <li><a href="#">MENU1</a></li>
-    <li><a href="#">MENU2</a>
-      <ul id="sub-menu">
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-      </ul>
-    </li>
-    <li><a href="#">MENU3</a>
-      <ul id="sub-menu">
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-      </ul>
-    </li>
-    <li><a href="#">MENU4</a>
-      <ul id="sub-menu">
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-      </ul>
-    </li>
-    <li><a href="#">MENU5</a></li>
-    <li><a href="#">MENU6</a></li>
-  </ul>
-</nav>
-<section>
-  <h2>Title</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat dolor velit, voluptatum vel enim consectetur eligendi molestias quaerat magnam voluptatibus corrupti eos quae praesentium voluptate tempora, provident voluptatem voluptates tenetur odio perspiciatis quisquam eum? Consequuntur quaerat earum natus minima soluta non quam temporibus beatae, explicabo repudiandae nihil? Eaque obcaecati, nisi laudantium rem consectetur eos quas. A quaerat libero ipsam, dolor quas rem est suscipit nemo accusamus corrupti, quisquam ex tenetur sed. Voluptas, veniam veritatis aperiam quos, optio quo nihil, iusto inventore illum porro quae id. Similique reiciendis dolorem debitis quia dignissimos ea fugit aut! Saepe vel accusantium et adipisci! Soluta reprehenderit quidem odio vel a labore officiis quisquam libero ipsum. Nobis, natus voluptatum consequatur officia ipsa tempora aut veritatis cumque aperiam beatae velit! Non veniam aliquid at aut iste odit error, omnis rerum commodi odio voluptas, ex sunt, tempore laborum natus aspernatur unde autem enim nesciunt suscipit dolorum. Fugiat expedita eos saepe sapiente, recusandae distinctio placeat corporis, pariatur id dolorum libero asperiores illum laborum obcaecati ad quia ullam non porro magni accusamus est nulla soluta magnam! Quae obcaecati autem officiis. Natus minima ab, accusamus a quia in, praesentium vel eligendi ratione, esse et sit commodi! Quis id magnam vero!
-  atus aspernatur unde autem enim nesciunt suscipit dolorum. Fugiat expedita eos saepe sapiente, recusandae distinctio placeat corporis, pariatur id dolorum libero asperiores illum laborum obcaecati ad quia ullam non porro magni accusamus est nulla soluta magnam! Quae obcaecati autem officiis. Natus minima ab, accusamus a quia in, praesentium vel eligendi ratione, esse et sit commodi! Quis id magnam vero!</p>
-</section>
+<style>
+
+/* 블로그메뉴 */
+
+
+div, ul, li { margin:0; padding:0; }
+
+#blogMenu {
+	float:right;
+	margin:0px 5px 3px 5px;
+	padding:0 0 3px 0;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#blogMenu, ul ul {
+	box-shadow: 0px 0px 15px rgba(0,0,0,.3);
+	-moz-box-shadow: 0px 0px 15px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,.3);
+	-o-box-shadow: 0px 0px 15px rgba(0,0,0,.3);
+	background-color:#5c5c5c;
+}
+
+
+
+#blogMenu ul li {
+	float:left;
+	list-style-type:none;
+}
+
+
+#blogMenu a {
+	height:16px;
+	color:#f1f1f1;
+	font-family:arial;
+	font-size:12px;
+	padding:0 10px 0 10px;
+	text-decoration:none;
+}
+
+#blogMenu a:hover {
+	color:#D4F4FA;
+	border-bottom:3px solid #FAED7D;
+}
+
+#blogMenu ul ul {
+	margin-top:3px;
+	display:none;
+	position:absolute;
+	-moz-border-radius-bottom-left: 3px;
+	 -khtml-border-bottom-left-radius: 3px;
+	 -webkit-border-bottom-left-radius: 3px;
+	 border-bottom-left-radius: 3px;
+	-moz-border-radius-bottom-right: 3px;
+	 -khtml-border-bottom-right-radius: 3px;
+	 -webkit-border-bottom-right-radius: 3px;
+	 border-bottom-right-radius: 3px;
+}
+
+#blogMenu ul li:hover ul {
+	display: block;
+}
+
+#blogMenu ul ul li {
+	float:none;
+}
+
+</style>
+
+<div id="blogMenu">
+<ul>
+<li><a href="#">Menu 1</a></li>
+
+<li><a href="#">Menu 2</a>
+
+<ul>
+<li><a href="#">Sub Menu 1</a></li>
+<li><a href="#">Sub Menu 2</a></li>
+<li><a href="#">Sub Menu 3</a></li>
+</ul>
+
+</li>
+
+
+<li><a href="#">Menu 3</a>
+
+<ul>
+<li><a href="#">Sub Menu 1</a></li>
+<li><a href="#">Sub Menu 2</a></li>
+<li><a href="#">Sub Menu 3</a></li>
+</ul>
+
+</li>
+
+
+<li><a href="#">Menu 4</a></li>
+<li><a href="#">Menu 5</a></li>
+</ul>
+</div>
