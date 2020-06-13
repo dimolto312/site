@@ -2464,14 +2464,18 @@ ul.breadcrumb li+li:last-child {
   }
 }
 .header-inner {
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-  padding: 0;
-  width: 240px;
-  background: #fff;
-  box-shadow: 0 2px 2px 0 #000, 0 3px 1px -2px #000, 0 1px 5px 0 #000;
-  border-radius: initial;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 240px;
+    background: #fff;
+        background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 2px 0 #000, 0 3px 1px -2px #000, 0 1px 5px 0 #000;
+    border-radius: initial;
+    position: relative;
+    left: -800;
+    top: 8;
 }
 @media (min-width: 1200px) {
   .container .header-inner {
@@ -2873,10 +2877,11 @@ ul.breadcrumb li+li:last-child {
 .post-block {
     padding: 40px;
     background: #fff;
-    width: auto;
+        background-color: rgb(255, 255, 255);
+    width: max-content;
     position: relative;
-    left: 210;
-    top: 0;
+    left: 350;
+    top: -250;
     box-shadow: 0 2px 2px 0 #000, 0 3px 1px -2px #000, 0 1px 5px 0 #000;
     border-radius: initial;
 }
